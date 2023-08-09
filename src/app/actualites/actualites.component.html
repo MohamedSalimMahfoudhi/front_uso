@@ -1,0 +1,92 @@
+<!-- actualite-list.component.html -->
+
+<div class="page-content bg-white">
+    <!-- inner page banner -->
+    <app-front-banner [data]="banner"></app-front-banner>
+    <!-- inner page banner END -->
+    <!-- contact area -->
+    <div class="content-block">
+        <!-- Features -->
+        <div class="section-full content-inner bg-gray">
+            <div class="container">
+                <div class="section-head text-black text-center">
+                    <h2 class="title">Nos Actualités Universitaires</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
+                        standard dummy text ever since the been when an unknown printer.</p>
+                </div>
+
+                <div class="widget">
+                    <h5 class="widget-title style-1">Search</h5>
+                    <div class="search-bx style-1">
+                        <form role="search" method="post">
+                            <div class="input-group">
+                                <input name="text" class="form-control" placeholder="Enter your keywords..." type="text"
+                                    [(ngModel)]="keyword" (change)="onInputChange($event)">
+                                <span class="input-group-btn">
+                                    <button type="submit" class="fa fa-search site-button sharp radius-no"></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <ng-container *ngFor="let actualite of actualites">
+                        <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+
+                            <div class="dlab-box service-box-2">
+                                <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect rotate">
+                                    <a [routerLink]="['/actualites/',actualite.id]"><img
+                                            src="assets/uploads{{actualite?.imageAct}}" alt=""></a>
+                                </div>
+                                <div class="dlab-info p-a20 border-1">
+                                    <div class="dlab-post-meta">
+                                        <ul>
+                                            <li class="post-date"> <span> {{actualite.created}} </span> </li>
+                                            <li class="post-tag"> By <a href="javascript:void(0);">Education</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dlab-post-title">
+                                        <h4 class="post-title"><a [routerLink]="['/actualites/',actualite.id]" >{{actualite.titreAct}}</a></h4>
+                                    </div>
+                                    <div class="dlab-post-text">
+                                       <p>{{actualite.sujetAct | truncate: 100}}</p>
+                                    </div>
+                                    <div class="dlab-post-readmore"> 
+                                        <a [routerLink]="['/actualites/',actualite.id]" title="READ MORE" rel="bookmark" class="site-button">READ MORE
+                                            <i class="ti-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                              
+
+                            </div>
+                        </div>
+                    </ng-container>
+                    <!-- Pagination -->
+                    <div class="pagination-bx rounded-sm primary clearfix col-md-12 text-center">
+                        <ul class="pagination">
+
+
+                            <li class="previous"><a href="javascript:void(0);" (click)="onPreviousPage()"><i
+                                        class="ti-arrow-left"></i> Prev</a></li>
+                            <li class="active"><a href="javascript:void(0);">{{ currentPage }} </a></li>
+                            <li *ngIf="totalPages > 1 && currentPage<totalPages"><a href="javascript:void(0);"
+                                    (click)="selectPage()">{{ nextCurrentPage }} </a></li>
+                            <li class="next"><a href="javascript:void(0);" (click)="onNextPage()">Next <i
+                                        class="ti-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Pagination END -->
+                </div>
+
+
+            </div>
+            <!-- Features End -->
+
+        </div>
+        <!-- contact area END -->
+
+    </div>

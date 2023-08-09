@@ -1,0 +1,69 @@
+<!-- actualite-list.component.html -->
+
+
+
+
+    
+<div class="page-wraper">
+  <!-- inner page banner -->
+  <app-front-banner [data]="banner"></app-front-banner>
+  <!-- inner page banner END -->  
+    <!-- Content -->
+    <div class="page-content bg-white">
+      
+        <!-- inner page banner END -->
+        <!-- contact area -->
+        <div class="content-area">
+            <div class="container max-w900">
+			
+                <div class="row">
+								
+                    <!-- left part start -->
+				<div class="" [ngClass]="{'col-xl-9 col-lg-8 col-md-12 m-b30': layout.sidebar === true, 'col-xl-12 col-lg-12': layout.sidebar === false}">
+                        <!-- blog start -->
+					<div class="blog-post blog-single">
+						<div class="dlab-info">
+							<div class="dlab-post-meta">
+								<ul>
+									<li class="post-author"> <i class="la la-user-circle"></i> By <a href="javascript:void(0);">Caroline</a> </li>
+									<li class="post-date"> <i class="la la-clock"></i> <span> {{actualite?.created}} </span> </li>
+									<li class="post-tag"> <a href="javascript:void(0);">Education</a> </li>
+								</ul>
+							</div>
+							<h2 class="dlab-title">{{actualite?.titreAct}}</h2>
+							<div class="dlab-media">
+								<a href="javascript:void(0);"><img src="assets/uploads{{actualite?.imageAct}}"></a>
+							</div>
+							<div class="dlab-post-text text">
+								<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed maximus orci ac condi mentum efficitur. Suspendi potenti. Fusce diam felis, ullamcor aca felis sed, volutpat varius tortor. Ut eleifend justo sed quam blandit, vehicula ante hendrerit. Sed condimentum libero vel eros porta, eu malesuada nulla bibendum. Proin varius sollicitudin nulla quis fermentum. Nunc vitae arcu eget diam gravida ultrices finibus nec mi. Maecenas egestas libero.</p>
+								
+							</div>
+						
+						</div>
+					</div>
+			
+				
+				
+                 
+            </div>
+        </div>
+    </div>
+    <!-- Content END-->
+	
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
