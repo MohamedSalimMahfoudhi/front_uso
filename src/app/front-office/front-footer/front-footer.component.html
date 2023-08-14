@@ -21,12 +21,13 @@
                     <div class="widget">
                         <h6 class="text-white font-weight-300 text-uppercase">Newsletter</h6>
                         <div class="subscribe-form m-b20 m-t15">
-                            <form class="dzSubscribe" action="script/mailchamp.php" method="post">
+                            <form  #f="ngForm" class="dzSubscribe" >
                                 <div class="dzSubscribeMsg"></div>
                                 <div class="input-group">
-                                    <input name="dzEmail" required="required" class="form-control radius-sm" placeholder="Your Email Id" type="email">
+                                    <input name="email" [(ngModel)]="email" #emailInput="ngModel" required minlength="3" class="form-control radius-sm" placeholder="Your Email Id" type="email">
                                     <span class="input-group-btn">
-                                        <button name="submit" value="Submit" type="submit" class="site-button radius-sm btn-tb btnhover19">SEND</button>
+                                        <button  name="submit" value="Submit" type="submit" class="site-button radius-sm btn-tb btnhover19"  (click)="addEmail(f)">SEND</button>
+                                       
                                     </span> 
                                 </div>
                             </form>

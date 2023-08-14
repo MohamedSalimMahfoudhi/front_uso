@@ -11,7 +11,7 @@
                 <div class="post card-container col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-post blog-grid blog-rounded blog-effect1">
                         <div class="dlab-post-media dlab-img-effect"> 
-                            <a [routerLink]="['/actualites/',actualites[0].id]" ><img src="assets/uploads{{actualites[0].imageAct}}" alt=""></a> 
+                            <a [routerLink]="['universite/actualites/',actualites[0].id]" ><img src="assets/uploads{{actualites[0].imageAct}}" alt=""></a> 
                         </div>
                         <div class="dlab-info p-a20 border-1">
                             <div class="dlab-post-meta">
@@ -21,13 +21,13 @@
                                 </ul>
                             </div>
                             <div class="dlab-post-title">
-                                <h4 class="post-title"><a [routerLink]="['/actualites/',actualites[0].id]" >{{actualites[0].titreAct}}</a></h4>
+                                <h4 class="post-title"><a [routerLink]="['universite/actualites/',actualites[0].id]" >{{actualites[0].titreAct}}</a></h4>
                             </div>
                             <div class="dlab-post-text">
                                <p>{{actualites[0].sujetAct| truncate: 100}}</p>
                             </div>
                             <div class="dlab-post-readmore"> 
-                                <a [routerLink]="['/actualites/',actualites[0].id]"  title="READ MORE" rel="bookmark" class="site-button">READ MORE
+                                <a [routerLink]="['universite/actualites/',actualites[0].id]"  title="READ MORE" rel="bookmark" class="site-button">READ MORE
                                     <i class="ti-arrow-right"></i>
                                 </a>
                             </div>
@@ -37,7 +37,7 @@
                 <div class="post card-container col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-post blog-grid blog-rounded blog-effect1">
                         <div class="dlab-post-media dlab-img-effect"> 
-                            <a [routerLink]="['/actualites/',actualites[1].id]" ><img src="assets/uploads{{actualites[1].imageAct}}" alt=""></a> 
+                            <a [routerLink]="['universite/actualites/',actualites[1].id]" ><img src="assets/uploads{{actualites[1].imageAct}}" alt=""></a> 
                         </div>
                         <div class="dlab-info p-a20 border-1">
                             <div class="dlab-post-meta">
@@ -47,13 +47,13 @@
                                 </ul>
                             </div>
                             <div class="dlab-post-title">
-                                <h4 class="post-title"><a [routerLink]="['/actualites/',actualites[1].id]" >{{actualites[1].titreAct}}</a></h4>
+                                <h4 class="post-title"><a [routerLink]="['universite/actualites/',actualites[1].id]" >{{actualites[1].titreAct}}</a></h4>
                             </div>
                             <div class="dlab-post-text">
                                <p>{{actualites[1].sujetAct | truncate: 100}}</p>
                             </div>
                             <div class="dlab-post-readmore"> 
-                                <a [routerLink]="['/actualites/',actualites[1].id]"  title="READ MORE" rel="bookmark" class="site-button">READ MORE
+                                <a [routerLink]="['universite/actualites/',actualites[1].id]"  title="READ MORE" rel="bookmark" class="site-button">READ MORE
                                     <i class="ti-arrow-right"></i>
                                 </a>
                             </div>
@@ -63,7 +63,7 @@
                 <div class="post card-container col-lg-4 col-md-6 col-sm-6">
                     <div class="blog-post blog-grid blog-rounded blog-effect1">
                         <div class="dlab-post-media dlab-img-effect"> 
-                            <a [routerLink]="['/actualites/',actualites[2].id]" ><img src="assets/uploads{{actualites[2].imageAct}}" alt=""></a> 
+                            <a [routerLink]="['universite/actualites/',actualites[2].id]" ><img src="assets/uploads{{actualites[2].imageAct}}" alt=""></a> 
                         </div>
                         <div class="dlab-info p-a20 border-1">
                             <div class="dlab-post-meta">
@@ -73,20 +73,26 @@
                                 </ul>
                             </div>
                             <div class="dlab-post-title">
-                                <h4 class="post-title"><a [routerLink]="['/actualites/',actualites[2].id]" >{{actualites[2].titreAct}}</a></h4>
+                                <h4 class="post-title"><a [routerLink]="['universite/actualites/',actualites[2].id]" >{{actualites[2].titreAct}}</a></h4>
                             </div>
                             <div class="dlab-post-text">
                                <p>{{actualites[2].sujetAct | truncate: 100}}</p>
                             </div>
                             <div class="dlab-post-readmore"> 
-                                <a [routerLink]="['/actualites/',actualites[2].id]" title="READ MORE" rel="bookmark" class="site-button">READ MORE
+                                <a [routerLink]="['universite/actualites/',actualites[2].id]" title="READ MORE" rel="bookmark" class="site-button">READ MORE
                                     <i class="ti-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
+             
             </div>
+        </div>
+        <div class="d-flex justify-content-center section-content box-sort-in  button-example m-b30">
+            <button [routerLink]="['universite/actualites/']" class="site-button m-r15" type="button">Voir toutes les actualités</button>
+           
         </div>
     </div>
 </div>

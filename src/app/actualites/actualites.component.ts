@@ -11,8 +11,7 @@ declare  var jQuery:  any;
 })
 export class ActualitesComponent implements OnInit {
 	actualitesPage : any[] = [];;
-	actualites: Actualite[];
-	
+	actualites: Actualite[];	
 	pageSize: number = 6;
 	currentPage: number = 1;
 	nextCurrentPage: number = this.currentPage+1;
@@ -50,6 +49,8 @@ banner : any = {
 		  response => {
 			this.actualites = response.content;
 			this.totalPages = response.totalPages;
+			console.log('array:',response.content)
+			console.log('page:',response.totalPages)
 
 		  },
 		  error => {

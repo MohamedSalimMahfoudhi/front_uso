@@ -11,6 +11,11 @@ import { ServicesAdministratifsComponent } from './services-administratifs/servi
 import { OrganigrammeComponent } from './organigramme/organigramme.component';
 import { LocalisationComponent } from './localisation/localisation.component';
 import { UniversiteBannerComponent } from './universite-banner/universite-banner.component'; 
+import { ActualitesComponent } from 'src/app/actualites/actualites.component';
+import { DetailActualiteComponent } from 'src/app/actualites/detail-actualite/detail-actualite.component';
+import { FormsModule } from '@angular/forms';
+import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
+import { AppModule } from 'src/app/app.module';
 
 
 
@@ -24,10 +29,20 @@ import { UniversiteBannerComponent } from './universite-banner/universite-banner
      OrganigrammeComponent,
      LocalisationComponent,
      UniversiteBannerComponent,
+     ActualitesComponent,
+     DetailActualiteComponent,
+     TruncatePipe,
+
+
     ],
   imports: [
     CommonModule,
-    FrontUniversiteRoutingModule
+    FrontUniversiteRoutingModule,
+    FormsModule,
+    
+  ],
+  exports:[
+    TruncatePipe
   ]
 })
 export class FrontUniversiteModule { }

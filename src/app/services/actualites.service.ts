@@ -25,4 +25,10 @@ getActualiteById(id: number): Observable<Actualite> {
   return this.http.get<Actualite>(`${this.API_URL}findActById?id=${id}`);
 }
 
+public addEmail(email: string): Observable<any> {
+  const body = { email }; // Create an object with the email property
+  return this.http.post(`${this.API_URL}addEmail`, body, { responseType: 'json' });
+
+}
+
 }

@@ -209,7 +209,10 @@ import { HomeCounterComponent } from './home/home-counter/home-counter.component
 import { FrontUniversiteModule } from './universite/front-universite/front-universite.module';
 import { FrontProgrammesModule } from './universite/front-programmes/front-programmes.module';
 import { PartenariatModule } from './universite/partenariat/partenariat.module';
-
+import { FrontEtudiantsModule } from './universite/front-etudiants/front-etudiants.module';
+import { FrontInstitutionsModule } from './universite/front-institutions/front-institutions.module';
+import { FrontRDModule } from './universite/front-rd/front-rd.module';
+import { FrontContactModule } from './universite/front-contact/front-contact.module';
 
 @NgModule({
   declarations: [
@@ -401,8 +404,7 @@ import { PartenariatModule } from './universite/partenariat/partenariat.module';
     HeaderLight10Component,
     HeaderLight11Component,
     HeaderLight12Component,
-    Courses5Component,
-    ActualitesComponent,
+    Courses5Component,  
     FrontOfficeComponent,
     HomeComponent,
     HomeSliderComponent,
@@ -410,9 +412,7 @@ import { PartenariatModule } from './universite/partenariat/partenariat.module';
     HomePartenaireComponent,
     FrontHeaderComponent,
     FrontFooterComponent,
-    DetailActualiteComponent,
-    FrontBannerComponent,
-    TruncatePipe,
+    FrontBannerComponent,  
     HomeCounterComponent,
   ],
   imports: [
@@ -424,11 +424,17 @@ import { PartenariatModule } from './universite/partenariat/partenariat.module';
     FrontUniversiteModule,
     FrontProgrammesModule,
     PartenariatModule,
+    FrontEtudiantsModule,
+    FrontInstitutionsModule,
+    FrontRDModule,
+    FrontContactModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
   exports: [
     FrontFooterComponent,
+  
   ]
 })
 export class AppModule { }
+

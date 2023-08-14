@@ -107,13 +107,21 @@ const routes: Routes = [
 	{
 		path: '', component: FrontOfficeComponent,
 		children: [
-			{path:'universite', loadChildren:
+		    {path:'universite', loadChildren:
      		 ()=>import('./universite/front-universite/front-universite.module').then(m=>m.FrontUniversiteModule)},
+			{path:'programmes', loadChildren:
+     		 ()=>import('./universite/front-programmes/front-programmes.module').then(m=>m.FrontProgrammesModule)},
+			{path:'partenariat', loadChildren:
+     		 ()=>import('./universite/partenariat/partenariat.module').then(m=>m.PartenariatModule)},
+			{path:'etudiants', loadChildren:
+     		 ()=>import('./universite/front-etudiants/front-etudiants.module').then(m=>m.FrontEtudiantsModule)},
+			{path:'RD', loadChildren:
+     		 ()=>import('./universite/front-rd/front-rd.module').then(m=>m.FrontRDModule)},
+			  {path:'contact', loadChildren:
+     		 ()=>import('./universite/front-contact/front-contact.module').then(m=>m.FrontContactModule)},
 
 
-
-			{ path: 'actualites', component: ActualitesComponent },
-			{ path: 'actualites/:id', component: DetailActualiteComponent },
+			
 			{ path: '', component: HomeComponent },
 		],
 	},
