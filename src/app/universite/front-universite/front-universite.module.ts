@@ -42,7 +42,8 @@ import { AppModule } from 'src/app/app.module';
     
   ],
   exports:[
-    TruncatePipe
+    TruncatePipe,
+    UniversiteBannerComponent
   ]
 })
 export class FrontUniversiteModule { }

@@ -432,7 +432,6 @@ import { FrontContactModule } from './universite/front-contact/front-contact.mod
   providers: [],
   bootstrap: [AppComponent],
   exports: [
-    FrontFooterComponent,
   
   ]
 })

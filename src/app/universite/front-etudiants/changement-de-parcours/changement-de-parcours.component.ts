@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./changement-de-parcours.component.css']
 })
 export class ChangementDeParcoursComponent implements OnInit {
-
+  banner : any = {		
+    pagetitle: "Changement de Parcours",
+    bg_image: "assets/images/banner/bnr5.jpg",
+    title: "Changement de Parcours",
+  }
   constructor() { }
 
   ngOnInit(): void {

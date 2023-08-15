@@ -8,13 +8,15 @@ import { DoctoratsComponent } from './doctorats/doctorats.component';
 import { FormationsCompComponent } from './formations-comp/formations-comp.component';
 import { EducationOuverteComponent } from './education-ouverte/education-ouverte.component';
 import { EnseignementDistComponent } from './enseignement-dist/enseignement-dist.component';
+import { FrontUniversiteModule } from '../front-universite/front-universite.module';
 
 
 @NgModule({
   declarations: [FormationInitialeComponent, MastersComponent, DoctoratsComponent, FormationsCompComponent, EducationOuverteComponent, EnseignementDistComponent],
   imports: [
     CommonModule,
-    FrontProgrammesRoutingModule
+    FrontProgrammesRoutingModule,
+    FrontUniversiteModule
   ]
 })
 export class FrontProgrammesModule { }

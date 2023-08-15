@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./entreprise.component.css']
 })
 export class EntrepriseComponent implements OnInit {
-
+  banner: any = {
+    pagetitle: "Entreprise",
+    bg_image: "assets/images/banner/bnr2.jpg",
+    title: "Entreprise",
+  }
   constructor() { }
 
   ngOnInit(): void {

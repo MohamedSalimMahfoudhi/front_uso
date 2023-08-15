@@ -1292,7 +1292,7 @@ var EduZone = function(){
 			setResizeMargin();
 			handelResize();
 			lightGallery();
-			handleSupport();
+			//handleSupport();
 			jQuery('.modal').on('show.bs.modal', reposition);
 		},
 		

@@ -23,7 +23,6 @@ export class HomeActualitesComponent implements OnInit {
 		  .subscribe(
 			data => {
 			  this.actualites = data;
-			  console.log(this.actualites);
 			},
 			error => {
 			  console.log(error);

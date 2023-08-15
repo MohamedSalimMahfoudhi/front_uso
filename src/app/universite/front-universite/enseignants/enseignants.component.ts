@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./enseignants.component.css']
 })
 export class EnseignantsComponent implements OnInit {
-  banner : any = {
-		
+  banner : any = {		
     pagetitle: "Enseignants",
     bg_image: "assets/images/banner/bnr2.jpg",
     title: "Enseignants",

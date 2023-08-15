@@ -6,13 +6,15 @@ import { EcolesDoctoralesComponent } from './ecoles-doctorales/ecoles-doctorales
 import { UnitesRechercheComponent } from './unites-recherche/unites-recherche.component';
 import { LaboratoiresRechercheComponent } from './laboratoires-recherche/laboratoires-recherche.component';
 import { BureauTransfertComponent } from './bureau-transfert/bureau-transfert.component';
+import { FrontUniversiteModule } from '../front-universite/front-universite.module';
 
 
 @NgModule({
   declarations: [EcolesDoctoralesComponent, UnitesRechercheComponent, LaboratoiresRechercheComponent, BureauTransfertComponent],
   imports: [
     CommonModule,
-    FrontRDRoutingModule
+    FrontRDRoutingModule,
+    FrontUniversiteModule
   ]
 })
 export class FrontRDModule { }

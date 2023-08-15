@@ -13,13 +13,16 @@ import { AccompagnementEcouteComponent } from './accompagnement-ecoute/accompagn
 import { InsertionProfessionnelComponent } from './insertion-professionnel/insertion-professionnel.component';
 import { CultureSportComponent } from './culture-sport/culture-sport.component';
 import { EnquetesComponent } from './enquetes/enquetes.component';
+import { UniversiteBannerComponent } from '../front-universite/universite-banner/universite-banner.component';
+import { FrontUniversiteModule } from '../front-universite/front-universite.module';
 
 
 @NgModule({
   declarations: [BoursesComponent, BoursesNationalesComponent, BoursesAlternanceComponent, BoursesInternationalesComponent, ReorientationComponent, MutationComponent, ChangementDeParcoursComponent, AccompagnementEcouteComponent, InsertionProfessionnelComponent, CultureSportComponent, EnquetesComponent],
   imports: [
     CommonModule,
-    FrontEtudiantsRoutingModule
+    FrontEtudiantsRoutingModule,
+    FrontUniversiteModule
   ]
 })
 export class FrontEtudiantsModule { }

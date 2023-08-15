@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bourses-internationales.component.css']
 })
 export class BoursesInternationalesComponent implements OnInit {
-
+  banner : any = {		
+    pagetitle: "Bourses Internationales",
+    bg_image: "assets/images/banner/bnr5.jpg",
+    title: "Bourses Internationales",
+  }
   constructor() { }
 
   ngOnInit(): void {

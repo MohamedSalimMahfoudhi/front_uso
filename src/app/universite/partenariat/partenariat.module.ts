@@ -7,13 +7,15 @@ import { StructuresAppuiComponent } from './structures-appui/structures-appui.co
 import { SocieteCivileComponent } from './societe-civile/societe-civile.component';
 import { ConventionsComponent } from './conventions/conventions.component';
 import { ProjetsInternationauxComponent } from './projets-internationaux/projets-internationaux.component';
+import { FrontUniversiteModule } from '../front-universite/front-universite.module';
 
 
 @NgModule({
   declarations: [EntrepriseComponent, StructuresAppuiComponent, SocieteCivileComponent, ConventionsComponent, ProjetsInternationauxComponent],
   imports: [
     CommonModule,
-    PartenariatRoutingModule
+    PartenariatRoutingModule,
+    FrontUniversiteModule
   ]
 })
 export class PartenariatModule { }
