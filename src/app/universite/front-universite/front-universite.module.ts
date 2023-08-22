@@ -16,7 +16,6 @@ import { FormsModule } from '@angular/forms';
 import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
 import { AppModule } from 'src/app/app.module';
 import { FrontQueryFormComponent } from './front-query-form/front-query-form.component';
-import { FrontAccordianComponent } from './front-accordian/front-accordian.component';
 
 
 
@@ -33,7 +32,6 @@ import { FrontAccordianComponent } from './front-accordian/front-accordian.compo
      DetailActualiteComponent,
      TruncatePipe,
      FrontQueryFormComponent,
-     FrontAccordianComponent,
 
 
     ],
@@ -47,7 +45,6 @@ import { FrontAccordianComponent } from './front-accordian/front-accordian.compo
     TruncatePipe,
     UniversiteBannerComponent,
     FrontQueryFormComponent,
-    FrontAccordianComponent,
   ]
 })
 export class FrontUniversiteModule { }

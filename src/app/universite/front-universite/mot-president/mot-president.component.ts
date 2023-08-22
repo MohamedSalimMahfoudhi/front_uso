@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MotPresidentComponent implements OnInit {
   banner : any = {		
     pagetitle: "Mot du president",
-    bg_image: "assets/images/banner/bnr2.jpg",
+    bg_image: "assets/images/banner/bnr5.jpg",
     title: "Mot du president",
   }
   constructor() { }
