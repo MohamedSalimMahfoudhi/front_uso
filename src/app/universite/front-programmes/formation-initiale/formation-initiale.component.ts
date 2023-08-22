@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormationInitialeComponent implements OnInit {
   banner: any = {
-    pagetitle: "Enseignants",
+    pagetitle: "Formation Initiale",
     bg_image: "assets/images/banner/bnr2.jpg",
-    title: "Enseignants",
+    title: "Formation Initiale",
   }
   constructor() { }
 

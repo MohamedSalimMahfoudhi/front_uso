@@ -121,7 +121,7 @@ const routes: Routes = [
      		 ()=>import('./universite/front-contact/front-contact.module').then(m=>m.FrontContactModule)},
 
 
-			
+			  {path: 'home-university', component: HomeUniversityComponent},
 			{ path: '', component: HomeComponent },
 			{ path: '**', component: HomeComponent },
 		],

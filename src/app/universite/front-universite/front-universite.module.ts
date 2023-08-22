@@ -9,13 +9,14 @@ import { EnseignantsComponent } from './enseignants/enseignants.component';
 import { PersonnelsComponent } from './personnels/personnels.component';
 import { ServicesAdministratifsComponent } from './services-administratifs/services-administratifs.component';
 import { OrganigrammeComponent } from './organigramme/organigramme.component';
-import { LocalisationComponent } from './localisation/localisation.component';
 import { UniversiteBannerComponent } from './universite-banner/universite-banner.component'; 
 import { ActualitesComponent } from 'src/app/actualites/actualites.component';
 import { DetailActualiteComponent } from 'src/app/actualites/detail-actualite/detail-actualite.component';
 import { FormsModule } from '@angular/forms';
 import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
 import { AppModule } from 'src/app/app.module';
+import { FrontQueryFormComponent } from './front-query-form/front-query-form.component';
+import { FrontAccordianComponent } from './front-accordian/front-accordian.component';
 
 
 
@@ -27,11 +28,12 @@ import { AppModule } from 'src/app/app.module';
      PersonnelsComponent,
      ServicesAdministratifsComponent,
      OrganigrammeComponent,
-     LocalisationComponent,
      UniversiteBannerComponent,
      ActualitesComponent,
      DetailActualiteComponent,
      TruncatePipe,
+     FrontQueryFormComponent,
+     FrontAccordianComponent,
 
 
     ],
@@ -43,7 +45,9 @@ import { AppModule } from 'src/app/app.module';
   ],
   exports:[
     TruncatePipe,
-    UniversiteBannerComponent
+    UniversiteBannerComponent,
+    FrontQueryFormComponent,
+    FrontAccordianComponent,
   ]
 })
 export class FrontUniversiteModule { }

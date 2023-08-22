@@ -10,4 +10,6 @@ export class TruncatePipe implements PipeTransform {
     }
     return value.substring(0, limit) + '...';
   }
+
+  
 }

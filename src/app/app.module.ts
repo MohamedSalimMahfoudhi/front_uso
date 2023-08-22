@@ -213,6 +213,8 @@ import { FrontEtudiantsModule } from './universite/front-etudiants/front-etudian
 import { FrontInstitutionsModule } from './universite/front-institutions/front-institutions.module';
 import { FrontRDModule } from './universite/front-rd/front-rd.module';
 import { FrontContactModule } from './universite/front-contact/front-contact.module';
+import { HomeTeamComponent } from './home/home-team/home-team.component';
+import { HomeTestimonialComponent } from './home/home-testimonial/home-testimonial.component';
 
 @NgModule({
   declarations: [
@@ -413,7 +415,7 @@ import { FrontContactModule } from './universite/front-contact/front-contact.mod
     FrontHeaderComponent,
     FrontFooterComponent,
     FrontBannerComponent,  
-    HomeCounterComponent,
+    HomeCounterComponent, HomeTeamComponent, HomeTestimonialComponent,
   ],
   imports: [
     BrowserModule,
