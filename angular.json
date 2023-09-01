@@ -34,6 +34,7 @@
               "src/assets/css/skin/skin-1.css",
               "src/assets/plugins/revolution/revolution/css/revolution.min.css",
               "src/assets/css/coming-soon.min.css"
+
             ],
             "scripts": [
 					"src/assets/js/jquery.min.js",

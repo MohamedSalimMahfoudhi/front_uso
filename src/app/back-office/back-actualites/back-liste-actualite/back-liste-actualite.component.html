@@ -1,0 +1,67 @@
+
+    <!-- Content -->
+
+        <!-- contact area -->
+        <div class="section-full ">
+            <!-- Product -->
+            <div class="container ">
+                <div class="row">
+					<div class="col-lg-12">
+						<div class="table-responsive">
+							<table class="table check-tbl">
+								<thead>
+									<tr>
+										<th>Product</th>
+										<th>Product name</th>
+										<th>Unit Price</th>
+										<th>Quantity</th>
+										<th>Add to cart </th>
+										<th>Close</th>
+									</tr>
+								</thead>
+								<tbody>
+
+									<tr *ngFor="let actualite of actualites" class="alert">
+										<td class="product-item-img">
+											<img src="assets/uploads{{actualite?.imageAct}}" alt="">
+										</td>
+										<td class="product-item-name">Color Pencils</td>
+										<td class="product-item-price">$28.00</td>
+										<td class="product-item-name">{{actualite.titreAct}}
+											
+										</td>
+										<td class="product-item-totle">
+											<a [routerLink]="['/shop-cart']" class="site-button">Add To Cart</a>
+										</td>
+										<td class="product-item-close">
+											<a href="javascript:void(0);" data-dismiss="alert" aria-label="close" class="ti-close"></a>
+										</td>
+									</tr>
+								
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			 </div>
+            <!-- Product END -->
+		</div>
+
+ 
+    <!-- Content END-->
+    <!-- Pagination -->
+                    <div class="pagination-bx rounded-sm primary clearfix col-md-12 text-center">
+                        <ul class="pagination">
+
+
+                            <li class="previous"><a href="javascript:void(0);" (click)="onPreviousPage()"><i
+                                        class="ti-arrow-left"></i> Prev</a></li>
+                            <li class="active"><a href="javascript:void(0);">{{ currentPage }} </a></li>
+                            <li *ngIf="totalPages > 1 && currentPage<totalPages"><a href="javascript:void(0);"
+                                    (click)="selectPage()">{{ nextCurrentPage }} </a></li>
+                            <li class="next"><a href="javascript:void(0);" (click)="onNextPage()">Next <i
+                                        class="ti-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Pagination END -->
+

@@ -215,6 +215,7 @@ import { FrontRDModule } from './universite/front-rd/front-rd.module';
 import { FrontContactModule } from './universite/front-contact/front-contact.module';
 import { HomeTeamComponent } from './home/home-team/home-team.component';
 import { HomeTestimonialComponent } from './home/home-testimonial/home-testimonial.component';
+import { BackOfficeModule } from './back-office/back-office.module';
 
 @NgModule({
   declarations: [
@@ -415,7 +416,9 @@ import { HomeTestimonialComponent } from './home/home-testimonial/home-testimoni
     FrontHeaderComponent,
     FrontFooterComponent,
     FrontBannerComponent,  
-    HomeCounterComponent, HomeTeamComponent, HomeTestimonialComponent,
+    HomeCounterComponent,
+    HomeTeamComponent, 
+    HomeTestimonialComponent, 
   ],
   imports: [
     BrowserModule,
@@ -430,6 +433,7 @@ import { HomeTestimonialComponent } from './home/home-testimonial/home-testimoni
     FrontInstitutionsModule,
     FrontRDModule,
     FrontContactModule,
+    BackOfficeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

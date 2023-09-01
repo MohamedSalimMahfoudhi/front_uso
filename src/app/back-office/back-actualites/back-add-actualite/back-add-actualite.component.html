@@ -1,0 +1,107 @@
+
+
+    <!-- Content -->
+    <div class="page-content bg-white">
+
+
+        <!-- contact area -->
+        <div class="section-full ">
+            <!-- Product -->
+            <div class="container">
+                <form [formGroup]="actualiteForm" (ngSubmit)="createActualite()" novalidate class="shop-form"   >
+
+					<div class="row">
+                    	<div class="col-lg-6 col-md-6 col-md-6 m-b30">
+						
+							<h6>Thème actualite</h6>						
+							<div class="form-group">
+							  <input formControlName="themeAct" type="text" class="form-control" 
+							   [class.red-placeholder]="actualiteForm.get('themeAct').hasError('required')&& actualiteForm.get('themeAct').touched"
+							  placeholder="{{ actualiteForm.get('themeAct').hasError('required')&& actualiteForm.get('themeAct').touched ? 'Title is required' : 'Enter theme' }}">
+						  </div>
+
+							<h6>Titre actualite</h6>						
+							  <div class="form-group">
+								<input formControlName="titreAct" type="text" class="form-control" 
+								 [class.red-placeholder]="actualiteForm.get('titreAct').hasError('required')&& actualiteForm.get('titreAct').touched"
+								placeholder="{{ actualiteForm.get('titreAct').hasError('required')&& actualiteForm.get('titreAct').touched ? 'Title is required' : 'Enter Title' }}">
+							</div>
+
+							  
+							<h6>selecte image</h6>
+							<div class="uploadButton margin-top-30">
+								<input class="uploadButton-input" type="file" accept="image/*" id="upload" multiple=""
+									   (change)="onSelectFile($event)">
+								<label class="uploadButton-button ripple-effect" for="upload" id="test">Upload Files</label>
+								<span class="uploadButton-file-name"> &nbsp; Images</span>
+							</div>
+							
+							<h6>selecte pdf 1</h6>
+							<div class="uploadButton margin-top-30">
+								<input class="uploadButton-input" type="file" accept="pdf/*" id="pdf1" multiple=""
+									   (change)="onSelectFilePdf1($event)">
+								<label class="uploadButton-button ripple-effect" for="upload" id="test">Upload Files</label>
+								<span class="uploadButton-file-name"> &nbsp; PDF1</span>
+							</div>
+							
+							<h6>selecte pdf 2</h6>
+							<div class="uploadButton margin-top-30">
+								<input class="uploadButton-input" type="file" accept="pdf/*" id="pdf2" multiple=""
+									   (change)="onSelectFilePdf2($event)">
+								<label class="uploadButton-button ripple-effect" for="upload" id="test">Upload Files</label>
+								<span class="uploadButton-file-name"> &nbsp; PDF2</span>
+							</div>
+							<h6>selecte pdf 3</h6>
+							<div class="uploadButton margin-top-30">
+								<input class="uploadButton-input" type="file" accept="pdf/*" id="pdf3" multiple=""
+									   (change)="onSelectFilePdf3($event)">
+								<label class="uploadButton-button ripple-effect" for="upload" id="test">Upload Files</label>
+								<span class="uploadButton-file-name"> &nbsp; PDF3</span>
+							</div>
+							<h6>selecte pdf 4</h6>
+							<div class="uploadButton margin-top-30">
+								<input class="uploadButton-input" type="file" accept="pdf/*" id="pdf4" multiple=""
+									   (change)="onSelectFilePdf4($event)">
+								<label class="uploadButton-button ripple-effect" for="upload" id="test">Upload Files</label>
+								<span class="uploadButton-file-name"> &nbsp; PDF4</span>
+							</div>
+
+						
+							
+						
+						
+							
+						</div>
+						<div class="col-lg-6 col-md-6 col-md-6 m-b30">
+							<h5>Payment Method</h5>
+
+							<div class="form-group">
+								<textarea formControlName="sujetAct" class="form-control" placeholder="Notes about your order, e.g. special notes for delivery"
+								[class.red-placeholder]="actualiteForm.get('sujetAct').hasError('required')&& actualiteForm.get('sujetAct').touched"
+								placeholder="{{ actualiteForm.get('sujetAct').hasError('required')&& actualiteForm.get('sujetAct').touched ? 'sujet is required' : 'Enter sujet' }}"
+								></textarea>
+							</div>
+							<div class="form-group">
+								<button  class="site-button button-lg btn-block" type="submit">Place Order Now </button>
+							</div>
+
+
+
+						</div>
+					</div>
+				</form>
+				<div class="dlab-divider bg-gray-dark text-gray-dark icon-center"><i class="fa fa-circle bg-white text-gray-dark"></i></div>
+				<div class="row">
+					<div class="col-lg-6 m-b15">
+						
+					</div>
+					<div class="col-lg-6 m-b15">
+				
+					</div>
+				</div>
+		   </div>
+            <!-- Product END -->
+		</div>
+
+    </div>
+    <!-- Content END-->

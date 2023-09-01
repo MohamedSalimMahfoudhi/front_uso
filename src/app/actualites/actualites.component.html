@@ -22,9 +22,9 @@
                         <form role="search" method="post">
                             <div class="input-group">
                                 <input name="text" class="form-control" placeholder="Enter your keywords..." type="text"
-                                    [(ngModel)]="keyword" (change)="onInputChange($event)">
+                                    [(ngModel)]="keyword" (input)="onInputChange($event)">
                                 <span class="input-group-btn">
-                                    <button type="submit" class="fa fa-search site-button sharp radius-no"></button>
+                                    <button type="text" class="fa fa-search site-button sharp radius-no"></button>
                                 </span>
                             </div>
                         </form>
@@ -75,7 +75,7 @@
                                         class="ti-arrow-left"></i> Prev</a></li>
                             <li class="active"><a href="javascript:void(0);">{{ currentPage }} </a></li>
                             <li *ngIf="totalPages > 1 && currentPage<totalPages"><a href="javascript:void(0);"
-                                    (click)="selectPage()">{{ nextCurrentPage }} </a></li>
+                                    (click)="selectPage()">{{ totalPages }} </a></li>
                             <li class="next"><a href="javascript:void(0);" (click)="onNextPage()">Next <i
                                         class="ti-arrow-right"></i></a></li>
                         </ul>

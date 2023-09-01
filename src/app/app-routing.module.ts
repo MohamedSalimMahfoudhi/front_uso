@@ -88,6 +88,8 @@ import { ActualitesComponent } from './actualites/actualites.component';
 import { FrontOfficeComponent } from './front-office/front-office.component';
 import { HomeComponent } from './home/home.component';
 import { DetailActualiteComponent } from './actualites/detail-actualite/detail-actualite.component';
+import { BackOfficeComponent } from './back-office/back-office/back-office.component';
+//import { BackOfficeComponent } from './back-office/back-office.component';
 
 
 
@@ -102,8 +104,17 @@ const routes: Routes = [
 
 
 	{ path: 'home-college', component: HomeCollegeComponent },
+	{
+		path: 'admin',
+		children: [
+		    {path:'', loadChildren:
+     		 ()=>import('./back-office/back-office.module').then(m=>m.BackOfficeModule)},
+		
+		],
+	},
+
 	
-	  
+
 	{
 		path: '', component: FrontOfficeComponent,
 		children: [
@@ -127,6 +138,7 @@ const routes: Routes = [
 		],
 	},
 
+	
 
 
 

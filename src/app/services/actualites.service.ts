@@ -31,4 +31,24 @@ public addEmail(email: string): Observable<any> {
 
 }
 
+public uploadImageActualite(formData: FormData,id : number): Observable<any> {
+  const file = formData.get('file') as File;
+  const url = `${this.API_URL}upload?file=${file.name}&id=`+id;
+  console.log(url);
+  return this.http.post(url, formData , {responseType: 'text'});
+}
+
+public uploadPdfActualite(formData: FormData,id : number): Observable<any> {
+  const file = formData.get('file') as File;
+  const url = `${this.API_URL}uploadPdf?file=${file.name}&id=`+id;
+  console.log(url);
+  return this.http.post(url, formData , {responseType: 'text'});
+}
+
+
+public addActualite(actualite: Actualite){
+  return this.http.post(`${this.API_URL}addAct`,actualite);
+}
+
+
 }
