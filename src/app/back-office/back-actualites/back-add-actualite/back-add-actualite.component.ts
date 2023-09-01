@@ -53,6 +53,7 @@ export class BackAddActualiteComponent implements OnInit {
           await this.performUploadPdf2(id)
           await this.performUploadPdf3(id)
           await this.performUploadPdf4(id)
+          this.router.navigate(['/admin/actualites/liste']);
 
           
          
