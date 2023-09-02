@@ -12,7 +12,7 @@ import { OrganigrammeComponent } from './organigramme/organigramme.component';
 import { UniversiteBannerComponent } from './universite-banner/universite-banner.component'; 
 import { ActualitesComponent } from 'src/app/actualites/actualites.component';
 import { DetailActualiteComponent } from 'src/app/actualites/detail-actualite/detail-actualite.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
 import { AppModule } from 'src/app/app.module';
 import { FrontQueryFormComponent } from './front-query-form/front-query-form.component';
@@ -39,6 +39,8 @@ import { FrontQueryFormComponent } from './front-query-form/front-query-form.com
     CommonModule,
     FrontUniversiteRoutingModule,
     FormsModule,
+    ReactiveFormsModule
+
     
   ],
   exports:[
