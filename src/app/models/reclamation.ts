@@ -4,11 +4,10 @@ export class Reclamation {
     statuRec !: number;
     emailUserR!:string;
     nameUserR!:string;
-    DescriptionRec!:Text;
+    descriptionRec!:Text;
     objetRec!:string;
     createdAt!:Date;
-    updatedAt !: Date;
-  
+    updatedAt !: Date; 
   
   
   }

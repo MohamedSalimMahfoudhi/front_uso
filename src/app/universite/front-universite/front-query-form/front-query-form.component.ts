@@ -12,7 +12,7 @@ export class FrontQueryFormComponent implements OnInit {
   reclamationForm = new FormGroup({
     emailUserR: new FormControl(''),
     nameUserR: new FormControl(''),
-    DescriptionRec: new FormControl(''),
+    descriptionRec: new FormControl(''),
     objetRec: new FormControl(''),
   })
   constructor(private reclamationService: ReclamationsService, private fb: FormBuilder) { }
@@ -22,7 +22,7 @@ export class FrontQueryFormComponent implements OnInit {
     this.reclamationForm = this.fb.group({
       emailUserR: ['', [Validators.required]],
       nameUserR: ['', [Validators.required]],
-      DescriptionRec: [ '', [Validators.required]],
+      descriptionRec: [ '', [Validators.required]],
       objetRec: ['', [Validators.required]],
     })
   }

@@ -51,4 +51,9 @@ public addActualite(actualite: Actualite){
 }
 
 
+
+public emailActualite(actualite: Actualite): Observable<any> {
+  return this.http.post(`${this.API_URL}email`, actualite);
+}
+
 }

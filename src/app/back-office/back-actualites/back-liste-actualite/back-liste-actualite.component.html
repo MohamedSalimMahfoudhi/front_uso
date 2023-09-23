@@ -11,12 +11,11 @@
 							<table class="table check-tbl">
 								<thead>
 									<tr>
-										<th>Product</th>
-										<th>Product name</th>
-										<th>Unit Price</th>
-										<th>Quantity</th>
-										<th>Add to cart </th>
-										<th>Close</th>
+										<th>Image</th>
+										<th>Titre</th>
+										<th>Sujet</th>
+										<th>Action</th>
+										<th>Delete</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -25,13 +24,12 @@
 										<td class="product-item-img">
 											<img src="assets/uploads/{{actualite?.imageAct}}" style="width: 65px; height: 57px;" alt="">
 										</td>
-										<td class="product-item-name">Color Pencils</td>
-										<td class="product-item-price">$28.00</td>
-										<td class="product-item-name">{{actualite.titreAct}}
+										<td class="product-item-name">{{actualite?.titreAct}}</td>
+										<td class="product-item-name">{{actualite?.sujetAct | truncate: 18}}
 											
 										</td>
 										<td class="product-item-totle">
-											<a [routerLink]="['/shop-cart']" class="site-button">Add To Cart</a>
+											<a [routerLink]="['/shop-cart']" class="site-button">Update</a>
 										</td>
 										<td class="product-item-close">
 											<a href="javascript:void(0);" data-dismiss="alert" aria-label="close" class="ti-close"></a>

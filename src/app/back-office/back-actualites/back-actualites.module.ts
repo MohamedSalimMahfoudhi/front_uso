@@ -5,6 +5,7 @@ import { BackActualitesRoutingModule } from './back-actualites-routing.module';
 import { BackListeActualiteComponent } from './back-liste-actualite/back-liste-actualite.component';
 import { BackAddActualiteComponent } from './back-add-actualite/back-add-actualite.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FrontUniversiteModule } from 'src/app/universite/front-universite/front-universite.module';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     BackActualitesRoutingModule,
     ReactiveFormsModule,
+    FrontUniversiteModule
 
   ]
 })

@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Form, FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
 
 import { Router } from '@angular/router';
+import { Actualite } from 'src/app/models/actualites';
 import { ActualitesService } from 'src/app/services/actualites.service';
 declare var jQuery: any;
 
@@ -53,20 +54,30 @@ export class BackAddActualiteComponent implements OnInit {
           await this.performUploadPdf2(id)
           await this.performUploadPdf3(id)
           await this.performUploadPdf4(id)
-          this.router.navigate(['/admin/actualites/liste']);
-
-          
-         
+          this.router.navigate(['/admin/actualites/liste']);         
+          this.sendEmail(this.actualiteForm.value)
 
         },
 
         error: (e) => console.error(e)
       });
  // }
+
+ 
 }
 
+sendEmail(actualite : Actualite): void {
+  this.actualitesService.emailActualite(actualite)
+    .subscribe({
+      next:  async (res) => {
+      
 
+      },
 
+      error: (e) => console.error(e)
+    });
+
+  }
 
   public formData = new FormData();
   public selectedFile !: File;
